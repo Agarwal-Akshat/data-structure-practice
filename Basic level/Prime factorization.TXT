@@ -1,0 +1,16 @@
+public static void printPrimeFactorization(int n){
+    int i=2;
+    while(true){
+        if(n%i==0){
+            System.out.print(i+" ");
+            n=n/i;
+            i=2;
+            if(n==1){
+                break;
+            }
+        }
+        else{
+            i=i+1;
+        }
+        
+    }
